@@ -170,6 +170,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   currentRow: 2
+--- !u!1 &36503044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 36503045}
+  - component: {fileID: 36503046}
+  m_Layer: 0
+  m_Name: SpawnerManager4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &36503045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36503044}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1793864868}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &36503046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36503044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ce31d03f05c0245ac30c912380ab88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawners:
+  - {fileID: 1473299253}
+  delayBeforeActivation: 27.1
 --- !u!1 &135855189
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +301,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &138371831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 138371832}
+  - component: {fileID: 138371833}
+  m_Layer: 0
+  m_Name: MovingManager4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &138371832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138371831}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1793864868}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &138371833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138371831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 359eee6e231860948aa959a5344c736c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToMove: {fileID: 1473299254}
+  teleportationEvents:
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 0
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 27.2
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 0.2
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 0.2
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 0.2
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 0.2
 --- !u!1 &294567244
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +767,7 @@ GameObject:
   - component: {fileID: 853177388}
   - component: {fileID: 853177389}
   m_Layer: 0
-  m_Name: MovingManager3
+  m_Name: MovingManager2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -676,12 +781,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853177387}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1374681939}
+  m_Father: {fileID: 2096792023}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &853177389
 MonoBehaviour:
@@ -695,10 +800,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 359eee6e231860948aa959a5344c736c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToMove: {fileID: 1429493817}
+  objectToMove: {fileID: 294567246}
   teleportationEvents:
-  - targetPosition: {x: 0, y: 0, z: 0}
+  - targetPosition: {x: 0, y: 4, z: 0}
     timeToTeleport: 0
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
 --- !u!1 &948395315
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,7 +894,7 @@ GameObject:
   - component: {fileID: 954955091}
   - component: {fileID: 954955092}
   m_Layer: 0
-  m_Name: MovingManager2
+  m_Name: MovingManager3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -771,12 +908,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954955090}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2096792023}
+  m_Father: {fileID: 1374681939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &954955092
 MonoBehaviour:
@@ -790,10 +927,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 359eee6e231860948aa959a5344c736c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToMove: {fileID: 294567246}
+  objectToMove: {fileID: 1429493817}
   teleportationEvents:
   - targetPosition: {x: 0, y: 4, z: 0}
-    timeToTeleport: 0
+    timeToTeleport: 32
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
 --- !u!1 &960418540
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,8 +1042,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1429493817}
+  - {fileID: 954955091}
   - {fileID: 948395317}
-  - {fileID: 853177388}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1406414149
@@ -924,45 +1095,45 @@ MonoBehaviour:
   - targetPosition: {x: 0, y: 4, z: 0}
     timeToTeleport: 0.5
   - targetPosition: {x: 3, y: 4, z: 0}
-    timeToTeleport: 2
+    timeToTeleport: 1
   - targetPosition: {x: 0, y: 4, z: 0}
-    timeToTeleport: 2.5
-  - targetPosition: {x: 3, y: 4, z: 0}
-    timeToTeleport: 5
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
   - targetPosition: {x: 0, y: 4, z: 0}
-    timeToTeleport: 6
+    timeToTeleport: 1
   - targetPosition: {x: 3, y: 4, z: 0}
-    timeToTeleport: 7.5
+    timeToTeleport: 1
   - targetPosition: {x: 0, y: 4, z: 0}
-    timeToTeleport: 10
-  - targetPosition: {x: 4, y: 4, z: 0}
-    timeToTeleport: 11.5
-  - targetPosition: {x: 2, y: 4, z: 0}
-    timeToTeleport: 12
-  - targetPosition: {x: 4, y: 4, z: 0}
-    timeToTeleport: 13
-  - targetPosition: {x: 2, y: 4, z: 0}
-    timeToTeleport: 14
-  - targetPosition: {x: 4, y: 4, z: 0}
-    timeToTeleport: 16.5
-  - targetPosition: {x: 3, y: 4, z: 0}
-    timeToTeleport: 17
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
   - targetPosition: {x: 0, y: 4, z: 0}
-    timeToTeleport: 17.5
+    timeToTeleport: 1
   - targetPosition: {x: 3, y: 4, z: 0}
-    timeToTeleport: 18.5
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
   - targetPosition: {x: 0, y: 4, z: 0}
-    timeToTeleport: 19
-  - targetPosition: {x: 1, y: 4, z: 0}
-    timeToTeleport: 22
-  - targetPosition: {x: 2, y: 4, z: 0}
-    timeToTeleport: 24
+    timeToTeleport: 1
   - targetPosition: {x: 3, y: 4, z: 0}
-    timeToTeleport: 26
-  - targetPosition: {x: 4, y: 4, z: 0}
-    timeToTeleport: 28
-  - targetPosition: {x: 3, y: 4, z: 0}
-    timeToTeleport: 30
+    timeToTeleport: 1
+  - targetPosition: {x: -3, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 0, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: 1.5, y: 4, z: 0}
+    timeToTeleport: 1
+  - targetPosition: {x: -1.5, y: 4, z: 0}
+    timeToTeleport: 1
 --- !u!1 &1429493815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1183,56 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1374681939}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1473299252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1473299254}
+  - component: {fileID: 1473299253}
+  m_Layer: 0
+  m_Name: BulletSpawner4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1473299253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473299252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b5b739a2d33214eb27e915ec0c204c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 955684223370542793, guid: 343fa626c1e619f49a269d9ca1ad9580, type: 3}
+  bulletLife: 2
+  speed: 7
+  lifetime: 29
+  spawnerType: 0
+  firingRate: 0.2
+--- !u!4 &1473299254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473299252}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710576, w: 0.70710784}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1793864868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1573296937
 GameObject:
@@ -1129,6 +1350,40 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1793864867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793864868}
+  m_Layer: 0
+  m_Name: Spawner4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1793864868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793864867}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1473299254}
+  - {fileID: 36503045}
+  - {fileID: 138371832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894238973
@@ -1343,7 +1598,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 294567246}
-  - {fileID: 954955091}
+  - {fileID: 853177388}
   - {fileID: 2025329216}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1360,3 +1615,4 @@ SceneRoots:
   - {fileID: 2020879625}
   - {fileID: 2096792023}
   - {fileID: 1374681939}
+  - {fileID: 1793864868}
