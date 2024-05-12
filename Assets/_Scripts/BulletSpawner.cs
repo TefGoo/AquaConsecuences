@@ -12,6 +12,7 @@ public class BulletSpawner : MonoBehaviour
     public GameObject bullet;
     public float bulletLife = 1f;
     public float speed = 1f;
+    public float lifetime = 5f;
 
 
     [Header("Spawner Attributes")]
@@ -24,7 +25,7 @@ public class BulletSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Destroy(gameObject, lifetime);
     }
 
 
