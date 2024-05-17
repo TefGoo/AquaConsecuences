@@ -996,7 +996,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 752, y: 26}
+  m_AnchoredPosition: {x: 1172, y: 26}
   m_SizeDelta: {x: 34, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &591944095
@@ -1459,6 +1459,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1647247353}
+        m_TargetAssemblyTypeName: StoryManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1211587918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1607,7 +1619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -566, y: 17}
+  m_AnchoredPosition: {x: -674, y: 17}
   m_SizeDelta: {x: 64, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1593962721
@@ -1700,7 +1712,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageTransform: {fileID: 591944094}
   pointB: {x: 5, y: 0.4, z: 0}
-  moveSpeed: 42
+  moveSpeed: 60
+  secondImageTransform: {fileID: 1593962720}
+  secondPointB: {x: -6, y: 0.3, z: 0}
+  secondMoveSpeed: 48
+  secondImageDelay: 2
+  thirdImageTransform: {fileID: 1955788271}
+  thirdPointB: {x: 0, y: 0, z: 0}
+  thirdMoveSpeed: 80
+  delayedGameObject: {fileID: 1211587915}
+  gameObjectActivationDelay: 3
   nextButton: {fileID: 1211587917}
   storyText: {fileID: 1944628370}
   character1Animator: {fileID: 591944097}
@@ -2059,7 +2080,7 @@ Transform:
   m_GameObject: {fileID: 1955788269}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
