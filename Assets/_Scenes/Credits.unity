@@ -941,8 +941,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game created by\nTefdev\nMusic \nTricksntraps\nSFX\nKenney \nMichael Baradari\n2D
-    art\nPixel frog\nUi\nOArielG"
+  m_text: "Game created by\nTefdev\nMusic \nTricksntraps\nIamoneabe\nEldritch Grim\nSFX\nKenney
+    \nMichael Baradari\nTcarisland\n2D art\nPixel frog\nUi\nOArielG"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 119cf551d953c0942aef281ccf5bf057, type: 2}
   m_sharedMaterial: {fileID: 2129503641020757427, guid: 119cf551d953c0942aef281ccf5bf057, type: 2}

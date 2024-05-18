@@ -51,9 +51,13 @@ public class StoryManager : MonoBehaviour
         StartCoroutine(ActivateGameObjectAfterDelay(delayedGameObject, gameObjectActivationDelay));
 
         // Example dialogue initialization, replace with your own dialogue
-        dialogueQueue.Enqueue("First line of dialogue...");
-        dialogueQueue.Enqueue("Second line of dialogue...");
-        dialogueQueue.Enqueue("Third line of dialogue...");
+        dialogueQueue.Enqueue("Arrr! Ye scallywag, git over 'ere!");
+        dialogueQueue.Enqueue("What be ye callin' me a traitor for?");
+        dialogueQueue.Enqueue("Ye stole me last piece o' cake, ye did!");
+        dialogueQueue.Enqueue("But ye be a shark, ye don’t eat no cake!");
+        dialogueQueue.Enqueue("Aye, but that cake were made by me dear old mama shark...");
+        dialogueQueue.Enqueue("Well, I reckon it weren't all that tasty...");
+        dialogueQueue.Enqueue("Blimey! How dare ye say that?! Ye’ll face the CONSEQUENCES, ye will!");
 
         // Initialize the first dialogue
         UpdateDialogue();
