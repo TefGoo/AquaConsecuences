@@ -744,8 +744,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -2583,7 +2583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0421a264945070044978728f02cd09e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Level1
+  sceneToLoad: StoryChapter1
 --- !u!1 &1534946442
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,8 +3039,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280227348
-  m_fontColor: {r: 0.078431375, g: 0.08627451, b: 0.121568635, a: 1}
+    rgba: 4279633667
+  m_fontColor: {r: 0.013216452, g: 0.026250862, b: 0.084905684, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3515,13 +3515,13 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: -1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

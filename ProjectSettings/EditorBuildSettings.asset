@@ -12,9 +12,18 @@ EditorBuildSettings:
     path: Assets/_Scenes/QuickPlayScreen.unity
     guid: 9671bcf23890f334d9984a5d6f322c66
   - enabled: 1
+    path: Assets/_Scenes/StoryChapter1.unity
+    guid: f74cd546300118c4f983c0a353ba9b0d
+  - enabled: 1
     path: Assets/_Scenes/Level1.unity
     guid: f75aa31977b3aaf469ac38a9c29d9d6d
   - enabled: 1
+    path: Assets/_Scenes/Level2.unity
+    guid: 6e65ffc2a2bac7c498fdf7edd3992fc0
+  - enabled: 1
     path: Assets/_Scenes/Credits.unity
     guid: 713abd85c24748249b7436be1aca64d9
+  - enabled: 1
+    path: Assets/_Scenes/Tutorial.unity
+    guid: 65c552f4d30945f4aa23e75883f730f4
   m_configObjects: {}
