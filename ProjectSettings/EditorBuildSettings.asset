@@ -15,15 +15,57 @@ EditorBuildSettings:
     path: Assets/_Scenes/StoryChapter1.unity
     guid: f74cd546300118c4f983c0a353ba9b0d
   - enabled: 1
+    path: Assets/_Scenes/PreLevel1Story.unity
+    guid: 735347bf1a8690f4c9c7891dea913e0c
+  - enabled: 1
+    path: Assets/_Scenes/PreLevel1.unity
+    guid: 1dcfae1f95582b749960a0a48388e52c
+  - enabled: 1
     path: Assets/_Scenes/Level1.unity
     guid: f75aa31977b3aaf469ac38a9c29d9d6d
+  - enabled: 1
+    path: Assets/_Scenes/Level1Story.unity
+    guid: 901effc70b5c0fb4fa891b6ee204c504
+  - enabled: 1
+    path: Assets/_Scenes/StoryChapter2.unity
+    guid: eb89579760f9543428400b270875cc7a
+  - enabled: 1
+    path: Assets/_Scenes/PreLevel2Story.unity
+    guid: 85e5d29619cb7fe48a00f5e7fee2081e
+  - enabled: 1
+    path: Assets/_Scenes/PreLevel2.unity
+    guid: 11fcbbaf71431d148a5adabc505a2e30
   - enabled: 1
     path: Assets/_Scenes/Level2.unity
     guid: 6e65ffc2a2bac7c498fdf7edd3992fc0
   - enabled: 1
+    path: Assets/_Scenes/Level2Story.unity
+    guid: c815099915a1b3142894549218cf30f7
+  - enabled: 1
+    path: Assets/_Scenes/StoryChapter3.unity
+    guid: a5d58d9948a508445a87f45fc9a9932c
+  - enabled: 1
     path: Assets/_Scenes/Credits.unity
     guid: 713abd85c24748249b7436be1aca64d9
   - enabled: 1
+    path: Assets/_Scenes/PreTutorial.unity
+    guid: 1f6683a27d074634e883f82f2f0a0f53
+  - enabled: 1
     path: Assets/_Scenes/Tutorial.unity
     guid: 65c552f4d30945f4aa23e75883f730f4
+  - enabled: 1
+    path: Assets/_Scenes/GameOver.unity
+    guid: 33f5d2291e704644a8a5cccf369619c7
+  - enabled: 1
+    path: Assets/_Scenes/GameOverStory.unity
+    guid: 06b17646254736146b79c4913feb13a4
+  - enabled: 1
+    path: Assets/_Scenes/GameOver2.unity
+    guid: 1ba19253166bfaa469d231aa71e75384
+  - enabled: 1
+    path: Assets/_Scenes/GameOver2Story.unity
+    guid: bf99cc0e1bd638b4cbe118b67466c6a2
+  - enabled: 1
+    path: Assets/_Scenes/GameOverT.unity
+    guid: 38be2e03a37c32948af1b08fef3d487f
   m_configObjects: {}

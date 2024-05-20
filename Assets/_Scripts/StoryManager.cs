@@ -29,6 +29,9 @@ public class StoryManager : MonoBehaviour
     public Animator character1Animator; // Animator for character 1
     public Animator character2Animator; // Animator for character 2
 
+    public TextAsset dialogueTextAsset; // TextAsset for loading dialogues from a text file
+    public string nextSceneName; // Next scene to load after dialogues end
+
     private Queue<string> dialogueQueue = new Queue<string>(); // Queue of dialogue strings
     private Animator currentCharacterAnimator; // Reference to the current speaking character
     private bool isAnimating = false; // Flag to track if animation is playing
@@ -50,17 +53,23 @@ public class StoryManager : MonoBehaviour
         // Activate the GameObject after a delay
         StartCoroutine(ActivateGameObjectAfterDelay(delayedGameObject, gameObjectActivationDelay));
 
-        // Example dialogue initialization, replace with your own dialogue
-        dialogueQueue.Enqueue("Arrr! Ye scallywag, git over 'ere!");
-        dialogueQueue.Enqueue("What be ye callin' me a traitor for?");
-        dialogueQueue.Enqueue("Ye stole me last piece o' cake, ye did!");
-        dialogueQueue.Enqueue("But ye be a shark, ye don’t eat no cake!");
-        dialogueQueue.Enqueue("Aye, but that cake were made by me dear old mama shark...");
-        dialogueQueue.Enqueue("Well, I reckon it weren't all that tasty...");
-        dialogueQueue.Enqueue("Blimey! How dare ye say that?! Ye’ll face the CONSEQUENCES, ye will!");
+        // Load dialogues from the text asset
+        LoadDialogues(dialogueTextAsset);
 
         // Initialize the first dialogue
         UpdateDialogue();
+    }
+
+    private void LoadDialogues(TextAsset textAsset)
+    {
+        if (textAsset != null)
+        {
+            string[] dialogues = textAsset.text.Split(new char[] { '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
+            foreach (string dialogue in dialogues)
+            {
+                dialogueQueue.Enqueue(dialogue.Trim());
+            }
+        }
     }
 
     IEnumerator MoveImage(Transform image, Vector3 destination, float speed)
@@ -139,7 +148,7 @@ public class StoryManager : MonoBehaviour
         {
             // No more dialogue, display end message or perform other actions
             Debug.Log("End of dialogue!");
-            ChangeScene(); // Call to change the scene
+            SceneManager.LoadScene(nextSceneName); // Change scene to the specified scene
         }
     }
 
@@ -173,11 +182,5 @@ public class StoryManager : MonoBehaviour
 
         // Text fully revealed
         isTextRevealed = true;
-    }
-
-    private void ChangeScene()
-    {
-        // Change to the next scene (replace "NextSceneName" with your scene name)
-        SceneManager.LoadScene("Level1");
     }
 }

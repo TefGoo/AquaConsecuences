@@ -194,7 +194,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -1857,6 +1857,8 @@ MonoBehaviour:
   storyText: {fileID: 1944628370}
   character1Animator: {fileID: 591944097}
   character2Animator: {fileID: 1593962721}
+  dialogueTextAsset: {fileID: 4900000, guid: c23529a8c4f910a42ae630444ce5c6e7, type: 3}
+  nextSceneName: PreLevel1Story
 --- !u!4 &1647247356
 Transform:
   m_ObjectHideFlags: 0
